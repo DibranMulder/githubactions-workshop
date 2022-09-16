@@ -1,6 +1,14 @@
 name: .NET
 
 on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
  # Configureer triggers voor een push op de main branch
  # Configureer triggers voor een pull request
  # Configureer een trigger voor een handmatige build
